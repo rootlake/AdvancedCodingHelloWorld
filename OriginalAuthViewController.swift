@@ -14,8 +14,6 @@ import Firebase
 
 var masterToken = String()
 
-var tokenUserName = "pomfret-api"
-var tokenPassword = "Griffy1894"
 
 class AuthViewController: UIViewController, UITextFieldDelegate {
 
@@ -27,7 +25,7 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     
     
     //Set Master Token
-    let tokenParameters: Parameters = ["format": "json", "password": tokenPassword, "username": tokenUserName]
+    let tokenParameters: Parameters = ["format": "json", "password": UserData.sharedInstance.tokenPassword, "username": UserData.sharedInstance.tokenUserName]
     
     var userID : Int = 0
     var user : String = ""

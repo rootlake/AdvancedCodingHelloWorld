@@ -22,6 +22,8 @@ class UserData {
     var studentData : [(userID: String, firstName: String, lastName: String, nickName: String?, yog: String, email: String, photo: String?, phone : String?, dorm : String?)] = []
     var facultyData : [(userID: String, firstName: String, lastName: String, prefix: String?, email: String, photo: String?)] = []
     var sportsData : [(gameID: String, team: String, location: String, title: String?, home: String, date: String, time: String?, score: String?, headline: String?, highlights: String?, outcome: String?)] = []
+    var tokenUsername:String
+    var tokenPassword:String
     
     class var sharedInstance : UserData {
         struct Singleton {
@@ -30,7 +32,6 @@ class UserData {
         
         return Singleton.instance
     }
-    
     init() {
         userID = 0
         userIndex = 0
