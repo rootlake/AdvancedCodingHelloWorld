@@ -165,6 +165,7 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
                     firstName: elem["FirstName"].element!.text!,
                     lastName: elem["LastName"].element!.text!,
                     nickName: elem["Nickname"].element!.text!,
+                    prefix: elem["Prefix"].element!.text!,
                     yog: elem["GraduationYear"].element!.text!,
                     email: elem["EmailAddress"].element!.text!,
                     photo: elem["Photo"].element!.text!,
